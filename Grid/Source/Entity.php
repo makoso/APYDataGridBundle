@@ -531,7 +531,7 @@ class Entity extends Source
 
         // hydrate result
         $result = new Rows();
-
+        $items = $items->getQuery()->getResult();
         foreach ($items as $item) {
             $row = new Row();
 
